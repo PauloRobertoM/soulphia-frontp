@@ -1,0 +1,141 @@
+/* font-family: 'Circe Light'; */
+@font-face {
+    font-family: 'Circe Light';
+    src: url('../fonts/CirceLight/Circe-Light.eot');
+    src: url('../fonts/CirceLight/Circe-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CirceLight/Circe-Light.woff') format('woff'),
+    url('../fonts/CirceLight/Circe-Light.ttf') format('truetype'),
+    url('../fonts/CirceLight/Circe-Light.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* font-family: 'Circe Regular'; */
+@font-face {
+    font-family: 'Circe Regular';
+    src: url('../fonts/CirceRegular/Circe-Regular.eot');
+    src: url('../fonts/CirceRegular/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CirceRegular/Circe-Regular.woff') format('woff'),
+    url('../fonts/CirceRegular/Circe-Regular.ttf') format('truetype'),
+    url('../fonts/CirceRegular/Circe-Regular.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* font-family: 'Circe Bold'; */
+@font-face {
+    font-family: 'Circe Bold';
+    src: url('../fonts/CirceBold/Circe-Bold.eot');
+    src: url('../fonts/CirceBold/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CirceBold/Circe-Bold.woff') format('woff'),
+    url('../fonts/CirceBold/Circe-Bold.ttf') format('truetype'),
+    url('../fonts/CirceBold/Circe-Bold.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GERAL */
+* {
+    outline: none;
+}
+a,
+button {
+    text-decoration: none!important;
+    cursor: pointer!important;
+    transition: 1s;
+}
+p {
+    line-height: 1.5;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    margin: 0;
+    font-family: 'Circe Regular';
+}
+.container {
+    max-width: 100%!important;
+    width: 100%;
+    padding: 0 15px!important;
+}
+
+/* HEADER */
+.navbar-default {
+    background: transparent;
+    border-color: transparent;
+    height: 120px;
+    border-radius: 0;
+    margin-bottom: 0px;
+    border: none;
+}
+.navbar-header .navbar-brand {
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 180px;
+    margin-left: 15px;
+}
+
+.vitrine {
+    margin-top: -120px;
+}
+.vitrine img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: left;
+}
+.comece-agora {
+    width: 75%;
+    padding: 20px;
+    margin-top: -370px;
+    background: rgba(255, 255, 255, .9);
+    border-radius: 20px;
+    position: absolute;
+    right: 15px;
+}
+.comece-agora h1 {
+    font-size: 26px;
+    color: #545454;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.comece-agora input {
+    font-size: 16px;
+    color: #c11c4b;
+    padding-left: 15px;
+    border-radius: 50px;
+    border: 1px solid #c11c4b;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.comece-agora button {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    background: #6aa842;
+    width: 100%;
+    height: 40px;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
