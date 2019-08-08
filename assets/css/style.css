@@ -80,8 +80,18 @@ body {
     padding: 0;
 }
 .logo {
-    width: 180px;
+    width: 160px;
     margin-left: 15px;
+}
+.btn-aluno {
+    font-size: 18px;
+    color: #fff;
+    background: #6aa842;
+    padding: 10px 20px 10px 30px;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    right: 0;
+    margin-top: 35px;
 }
 
 .vitrine {
@@ -127,6 +137,90 @@ body {
     background: #6aa842;
     width: 100%;
     height: 40px;
+}
+
+.como-funciona {
+    padding: 60px 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+.como-funciona img#borboleta1 {
+    transform: rotate(20deg);
+    position: absolute;
+    left: -270px;
+    margin-top: -270px;
+}
+.como-funciona img#borboleta2 {
+    transform: rotate(-20deg);
+    position: absolute;
+    right: -270px;
+    margin-top: -270px;
+}
+.como-funciona h1 {
+    font-size: 36px;
+    font-family: 'Circe Bold';
+    color: #646464;
+    text-align: center;
+    margin: 0 0 50px;
+    position: relative;
+}
+.como-funciona h1 span {
+    color: #d01f47;
+}
+.como-funciona .item1:before {
+    content: "";
+    background: url(../images/icone-balao-bandeira.png) no-repeat;
+    width: 83px;
+    height: 92px;
+    display: block;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 15px;
+    transform: scale(1);
+    transition: 1s ease all;
+}
+.como-funciona .item1:hover:before {
+    transform: scale(1.1);
+    transition: 1s ease all;
+}
+.como-funciona .item {
+    text-align: center;
+}
+.como-funciona .img {
+    width: 160px;
+    height: 160px;
+    border: 6px solid #ee1b48;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: 1s ease all;
+    margin: 0 auto;
+}
+.como-funciona .item:hover .img {
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s ease all;
+}
+.como-funciona .item img {
+    transform: scale(1);
+    transition: 1s ease all;
+}
+.como-funciona .item:hover img {
+    transform: scale(1.2);
+    transition: 1s ease all;
+}
+.como-funciona h4 {
+    font-size: 20px;
+    font-family: 'Circe Bold';
+    color: #ee1b48;
+    margin: 20px 0;
+}
+.como-funciona p {
+    font-size: 18px;
+    color: #515151;
 }
 
 /* --- MOBILE --- */
