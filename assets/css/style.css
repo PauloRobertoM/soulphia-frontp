@@ -140,42 +140,66 @@ body {
 }
 
 .como-funciona {
-    padding: 60px 0 15px;
+    padding: 50px 0 0;
     overflow: hidden;
     position: relative;
 }
 .como-funciona img#borboleta1 {
-    transform: rotate(20deg);
+    transform: rotate(0deg);
     position: absolute;
-    left: -270px;
-    margin-top: -270px;
+    left: -230px;
+    margin-top: -70px;
+    width: 300px;
 }
 .como-funciona img#borboleta2 {
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
     position: absolute;
-    right: -270px;
-    margin-top: -270px;
+    right: -180px;
+    margin-top: -210px;
+    width: 300px;
+}
+.como-funciona img#borboleta3 {
+    transform: rotate(-30deg);
+    position: absolute;
+    left: -230px;
+    margin-top: -40px;
+    width: 300px;
+}
+.como-funciona img#borboleta4 {
+    transform: rotate(20deg);
+    position: absolute;
+    right: -210px;
+    margin-top: -260px;
+    width: 300px;
 }
 .como-funciona h1 {
     font-size: 36px;
-    font-family: 'Circe Bold';
-    color: #646464;
+    color: #545454;
     text-align: center;
-    margin: 0 0 50px;
+    margin: 0 auto 80px;
     position: relative;
+    width: 300px;
+}
+.como-funciona h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: url(../images/borda.png) no-repeat;
 }
 .como-funciona h1 span {
-    color: #d01f47;
+    font-family: 'Circe Bold';
 }
 .como-funciona .item1:before {
     content: "";
     background: url(../images/icone-balao-bandeira.png) no-repeat;
-    width: 83px;
-    height: 92px;
+    background-size: contain;
+    width: 60px;
+    height: 68px;
     display: block;
     position: absolute;
-    margin-top: -55px;
-    margin-left: 15px;
+    margin-top: -25px;
+    margin-left: 72px;
     transform: scale(1);
     transition: 1s ease all;
 }
@@ -185,11 +209,12 @@ body {
 }
 .como-funciona .item {
     text-align: center;
+    margin-bottom: 60px;
 }
 .como-funciona .img {
-    width: 160px;
-    height: 160px;
-    border: 6px solid #ee1b48;
+    width: 130px;
+    height: 130px;
+    border: 4px solid #cc2148;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -206,21 +231,152 @@ body {
 }
 .como-funciona .item img {
     transform: scale(1);
+    width: 80px;
     transition: 1s ease all;
 }
 .como-funciona .item:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s ease all;
 }
 .como-funciona h4 {
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Circe Bold';
-    color: #ee1b48;
-    margin: 20px 0;
+    color: #cc2148;
+    text-transform: uppercase;
+    margin: 15px 0 5px;
 }
 .como-funciona p {
-    font-size: 18px;
+    font-size: 24px;
     color: #515151;
+}
+
+.jornada {
+    overflow: hidden;
+    position: relative;
+    height: 420px;
+}
+.jornada .bg-jornada {
+    width: 130%;
+    position: absolute;
+    left: -20px;
+    overflow: hidden;
+}
+.jornada .boneco-bandeira {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+.jornada .conteudo {
+    position: relative;
+    float: right;
+    padding-right: 15px;
+    top: 100px;
+}
+.jornada h1 {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgb(118, 118, 118);
+    margin: 0;
+}
+.jornada h1 span {
+    font-family: 'Circe Bold';
+}
+.jornada h4 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+}
+.jornada a {
+    font-size: 22px;
+    color: #fff;
+    background: #fa5c00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: table;
+    margin: 10px 0 0;
+}
+
+.porque {
+    padding: 150px 0;
+    background: url(../images/bg-porque.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.porque h1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    width: 300px;
+}
+.porque h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: url(../images/borda-branca.png) no-repeat;
+}
+.porque h1 span {
+    font-family: "Circe Bold";
+}
+.porque .panel-default {
+    border-color: transparent;
+    background: transparent;
+}
+.porque .panel-default>.panel-heading {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    background: #fff;
+    padding: 0;
+}
+.porque .panel-title {
+    width: 100%;
+}
+.porque .accordion-toggle.collapsed {
+    color: #545454;
+    background: #fff!important;
+}
+.porque .accordion-toggle {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    background: #6aa842;
+    display: block;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+.porque .panel-heading .accordion-toggle.collapsed:before {
+    content: "\f055";
+    color: #6aa842;
+}
+.porque .panel-heading .accordion-toggle:before {
+    font-family: FontAwesome;
+    content: "\f056";
+    float: left;
+    color: #fff;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+.porque .panel-collapse {
+    border-top: none;
+    margin-top: -4px;
+    margin-bottom: 2px;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+}
+.porque .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: transparent;
+    padding: 10px 15px;
+}
+.porque .panel-body p {
+    font-size: 16px;
+    color: #545454;
 }
 
 /* --- MOBILE --- */
