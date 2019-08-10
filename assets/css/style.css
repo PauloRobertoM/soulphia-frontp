@@ -103,7 +103,12 @@ body {
     object-fit: cover;
     object-position: left;
 }
+.vitrine.v2 img {
+    height: 450px;
+    object-position: right;
+}
 .comece-agora {
+    max-width: 310px;
     width: 75%;
     padding: 20px;
     margin-top: -370px;
@@ -112,11 +117,21 @@ body {
     position: absolute;
     right: 15px;
 }
+.v2 .comece-agora {
+    right: 0;
+    left: 15px;
+    max-width: 250px;
+    margin-top: -300px;
+}
 .comece-agora h1 {
     font-size: 26px;
     color: #545454;
     text-align: center;
     margin: 0 0 20px;
+}
+.v2 .comece-agora h1 {
+    font-size: 18px;
+    margin: 0 0 10px;
 }
 .comece-agora input {
     font-size: 16px;
@@ -126,6 +141,9 @@ body {
     border: 1px solid #c11c4b;
     height: 40px;
     margin-bottom: 15px;
+}
+.v2 .comece-agora input {
+    margin-bottom: 5px;
 }
 .comece-agora button {
     font-size: 20px;
@@ -225,7 +243,7 @@ body {
     margin: 0 auto;
 }
 .como-funciona .item:hover .img {
-    transform: rotate(90deg);
+    transform: rotate(10deg);
     transform-origin: center;
     transition: 1s ease all;
 }
@@ -298,7 +316,7 @@ body {
 }
 
 .porque {
-    padding: 150px 0;
+    padding: 200px 0;
     background: url(../images/bg-porque.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -379,9 +397,288 @@ body {
     color: #545454;
 }
 
-/* --- MOBILE --- */
-@media (max-width: 767px) {
+.compromisso {
+    padding: 0 0 30px;
+}
+.compromisso img {
+    width: 280px;
+    margin: -170px auto 10px;
+    display: table;
+}
+.compromisso h4 {
+    font-size: 30px;
+    font-family: 'Circe Bold';
+    color: #515151;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.compromisso h4 span {
+    font-family: 'Circe Regular';
+}
+.compromisso a {
+    font-size: 26px;
+    color: #fff;
+    background: #cc2148;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: table;
+    margin: 0 auto;
+}
 
+.padrinhos {
+    padding: 130px 0;
+    background: url(../images/bg-padrinhos.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.padrinhos h1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 30px;
+    position: relative;
+    width: 300px;
+}
+.padrinhos h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: url(../images/borda-branca.png) no-repeat;
+}
+.padrinhos h1 span {
+    font-family: 'Circe Bold';
+}
+.padrinhos img {
+    width: 100%;
+}
+
+.promocoes {
+    margin-top: -120px;
+}
+.promocoes img {
+    width: 100%;
+}
+
+.ajuda {
+    padding: 100px 0;
+    background: url(../images/bg-ajuda.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -57px;
+    position: relative;
+    z-index: 1;
+}
+.ajuda img {
+    width: 170px;
+    margin: 0 auto;
+    display: table;
+}
+.ajuda h1 {
+    font-size: 30px;
+    font-family: 'Circe Bold';
+    color: #343434;
+    text-align: center;
+    margin: 30px 0 20px;
+}
+.ajuda p {
+    font-size: 24px;
+    color: #343434;
+    text-align: center;
+}
+.ajuda a {
+    font-size: 30px;
+    color: #fff;
+    background: #c11c4b;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: table;
+    margin: 20px auto 0;
+}
+.ajuda a:before {
+    content: "";
+    display: block;
+    background: url(../images/borboleta.png) no-repeat;
+    background-size: 100%;
+    width: 80px;
+    height: 83px;
+    position: absolute;
+    margin-left: -88px;
+    margin-top: -37px;
+}
+
+.nossa-missao {
+    padding: 100px 0;
+    background: url(../images/bg-missao.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -59px;
+}
+.nossa-missao h1 {
+    font-size: 36px;
+    color: #343434;
+    text-align: center;
+    margin: 0 auto 30px;
+    position: relative;
+    width: 300px;
+}
+.nossa-missao h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: url(../images/borda.png) no-repeat;
+}
+.nossa-missao h1 span {
+    font-family: "Circe Bold";
+}
+.nossa-missao p {
+    font-size: 24px;
+    color: #343434;
+    text-align: center;
+    margin: 0 0 10px;
+}
+.nossa-missao a {
+    font-size: 30px;
+    color: #fff;
+    background: #70a83b;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: table;
+    margin: 20px auto 0;
+}
+
+footer {
+    background: url(../images/bg-footer-desktop.png) no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    margin-top: -60px;
+}
+footer img {
+    width: 130px;
+    float: left;
+}
+footer ul {
+    float: right;
+    display: flex;
+    margin: 5px 0 0;
+}
+footer ul>li>a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+footer ul .fa {
+    font-size: 26px;
+    color: #cc2148;
+}
+
+/* --- MOBILE --- */
+@media (min-width: 768px) {
+    .como-funciona .item1:before {
+        margin-top: -30px;
+        margin-left: 57px;
+    }
+    .jornada {
+        height: auto;
+    }
+    .jornada .bg-jornada {
+        max-width: 600px;
+        width: 50%;
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+        display: table;
+    }
+    .jornada .boneco-bandeira {
+        width: 12%;
+        max-width: 160px;
+        position: absolute;
+        bottom: 65px;
+        left: 30%;
+    }
+    .jornada .conteudo {
+        position: relative;
+        float: none;
+        padding-right: 0;
+        top: -290px;
+        margin: -90px auto 0;
+        text-align: center;
+    }
+    .jornada a {
+        margin: 10px auto 0;
+    }
+    .porque {
+        padding: 40px 0 60px;
+        background: url(../images/bg-preto-desktop.jpg) no-repeat;
+        background-position: bottom center;
+    }
+    .porque h1 {
+        margin: 0 auto 20px;
+    }
+    .porque .panel-group {
+        width: 50%;
+        margin: 0 auto 20px;
+    }
+    .porque .accordion-toggle {
+        text-align: left;
+        padding: 15px 20px;
+    }
+    .porque .panel-heading .accordion-toggle:before {
+        margin-right: 20px;
+    }
+    .compromisso {
+        padding: 0 0 50px;
+    }
+    .compromisso img {
+        margin: -50px auto 10px;
+    }
+    .padrinhos {
+        padding: 40px 0;
+        background: url(../images/bg-preto-desktop.jpg) no-repeat;
+        background-position: bottom center;
+    }
+    .padrinhos img {
+        width: 35%;
+        margin: 0 auto;
+        display: table;
+    }
+    .promocoes {
+        margin-top: 0;
+    }
+    .ajuda {
+        padding: 40px 0;
+        margin-top: 0;
+    }
+    .ajuda h1 {
+        margin: 30px 0 10px;
+    }
+    .ajuda p {
+        max-width: 500px;
+        margin: 0 auto 40px;
+    }
+    .nossa-missao {
+        padding: 40px 0 60px;
+        margin-top: 0;
+        background: url(../images/bg-missao-desktop.jpg) no-repeat;
+        background-size: cover;
+    }
+    iframe {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+    footer {
+        padding: 30px 0 10px;
+        margin-top: -20px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
 

@@ -45,7 +45,7 @@
 							<img src="assets/images/icone-master-class.png" alt=""/>
 						</div><!-- img -->
 						<h4>MasterClass</h4>
-						<p>Aprenda assistindo autlas ao vivo com os melhores professores do Soulphia.</p>
+						<p>Aprenda assistindo aulas ao vivo com os melhores professores do Soulphia.</p>
 					</div><!-- item -->
 				</div><!-- md-3 -->
 				<div class="col-md-3 col-sm-3">
@@ -54,7 +54,7 @@
 							<img src="assets/images/icone-aulas-individuais.png" alt=""/>
 						</div><!-- img -->
 						<h4>Aulas Individuais</h4>							
-						<p>Acelere sua fluência escolhendo o tutor e o tema que mais te agrade.</p>
+						<p>Acelere sua fluência escolhendo o tutor e o tema que mais te agrada.</p>
 					</div><!-- item -->
 				</div><!-- md-3 -->
 			</div><!-- row -->
@@ -128,5 +128,44 @@
             </div><!-- panel-group -->
 		</div><!-- container -->
 	</section><!-- porque -->
+
+	<section class="compromisso">
+		<div class="container">
+			<img src="assets/images/selo-soulphia.png">
+			<h4><span>Você terá</span> 7 dias para experimentar a plataforma.</h4>
+			<h4>Se não gostar, <span>pode cancelar e</span> NÃO SERÁ COBRADO!</h4>
+			<a href="">Quero falar inglês</a>
+		</div><!-- container -->
+	</section><!-- compromisso -->
+
+	<section class="padrinhos">
+		<h1>Nossos <span>Padrinhos</span></h1>
+		<img src="assets/images/padrinhos.png" />
+	</section><!-- padrinhos -->
+
+	<section class="promocoes">
+		<a href="">
+			<img src="assets/images/promocoes.png" class="visible-xs" />
+			<img src="assets/images/promocoes-desktop.png" class="hidden-xs" />
+		</a>
+	</section><!-- promocoes -->
+
+	<section class="ajuda">
+		<div class="container">
+			<img src="assets/images/maos.png" />
+			<h1>Ainda está em dúvida?</h1>
+			<p>Todas as vezes que vendemos 1 curso, doamos 1 curso para uma criança carente no Brasil.</p>
+			<a href="">Quero ajudar</a>
+		</div><!-- container -->
+	</section><!-- ajuda -->
+
+	<section class="nossa-missao">
+		<div class="container">
+			<h1>Nossa <span>Missão</span></h1>
+			<p>Transformar o mundo através da educação.</p>
+			<iframe width="100%" height="400" src="https://www.youtube.com/embed/7Z3_CsXA_-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<a href="">Obrigado, eu quero!</a>
+		</div><!-- container -->
+	</section><!-- nossa-missao -->
 
 <?php include 'components/footer.php'; ?>
